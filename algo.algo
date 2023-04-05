@@ -1,0 +1,21 @@
+ALGORITHM phrase
+VAR
+    CHAR:p
+    INTEGER:nb-v, nb-l-m =0
+    STRING:str:=
+    read(p)
+BEGIN
+    WHILE (p <> ".") DO
+    write("donne un caracter")
+    read(c)
+    l=l+1
+    str=str+c
+    IF (p==" ") THEN
+            m=m+1
+    elseIF (p=="a","i","y","A","E","I","Y","o","O") THEN
+            v=v+1
+    END_if
+        END_WHILE
+    write("votre phrase de longueur="p,"nombre de voyelles="v,"nombre de mots="m-1,)
+
+END
